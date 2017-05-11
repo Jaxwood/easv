@@ -2,3 +2,12 @@ language: node_js
 node_js: 
   - "iojs"
   - "7"
+deploy:
+  - provider: easv.azurewebsite.net
+    slot: uat
+    on: develop
+  - provider: easv.azurewebsite.net
+    slot: eze
+    on: release
+  - provider: easv.azurewebsite.net
+    on: master
