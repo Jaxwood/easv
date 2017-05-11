@@ -7,7 +7,7 @@ deploy:
     slot: easv-uat
     on: develop
   - provider: azure_web_apps
-    slot: name-slot
+    slot: easv-e2e
     on: release
   - provider: azure_web_apps
     on: master
