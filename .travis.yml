@@ -2,11 +2,10 @@ language: node_js
 node_js:
   - "iojs"
   - "7"
-
 deploy:
   - provider: azure_web_apps
     slot: easv-uat
-    on: development
+    on: develop
   - provider: azure_web_apps
     slot: easv-e2e
     on: release
