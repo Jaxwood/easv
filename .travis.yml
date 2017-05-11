@@ -5,9 +5,9 @@ node_js:
 deploy:
   - provider: azure_web_apps
     slot: name-slot
-    on: develop
+    on: easv-uat.azurewebsites.net
   - provider: azure_web_apps
     slot: name-slot
-    on: release
+    on: easv-e2e.azurewebsites.net
   - provider: azure_web_apps
-    on: master
+    on: easv.azurewebsites.net
