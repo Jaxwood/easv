@@ -1,0 +1,5 @@
+4 latest 4.x releaselanguage: node_js
+node_js:
+  - "iojs"
+  - "7"
+
