@@ -3,3 +3,12 @@ node_js:
   - "iojs"
   - "7"
 
+deploy:
+  - provider: azure_web_apps
+    slot: easv-uat.azurewebsites.net
+    on: develop
+  - provider: azure_web_apps
+    slot: easv-e2e.azurewebsites.net
+    on: release
+  - provider: azure_web_apps
+    on: master
