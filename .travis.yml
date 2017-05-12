@@ -5,9 +5,12 @@ node_js:
 deploy:
   - provider: azure_web_apps
     slot: easv-uat
+    verbose: true
     on: develop
   - provider: azure_web_apps
     slot: easv-e2e
+    verbose: true
     on: release
   - provider: azure_web_apps
+    verbose: true
     on: master
